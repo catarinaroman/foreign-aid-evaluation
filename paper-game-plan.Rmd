@@ -1,0 +1,39 @@
+---
+title: "Evidence on the Effectiveness of Foreign Aid: An Evaluation of Five Variables"
+author: "Catarina Roman"
+date: \today
+output: html_document
+---
+
+# Search Strategy
+
+Search String: ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"immigration"OR"development")AND("effect"OR"impact")
+
+## By Journal
+
+| Field | Journal | Link | "foreign aid" | Full String | String after 2000 |
+| ---------- |:---------:| ---- | :-----: | :-----: | :-------: |
+| Political Science  | APSR | https://www.cambridge.org/core/journals/american-political-science-review | 2253  | 1313  | 96 |
+| Political Science  | AJPS | https://onlinelibrary.wiley.com/journal/15405907  | 152  | 47 | Begins at 2003  |
+| Political Science  | BJPolS |  https://www.cambridge.org/core/journals/british-journal-of-political-science |  132 | 82  | 55 |
+| Political Science  | JOP  | https://www.jstor.org/journal/jpolitics | 956  | 183  | 58 |
+| International Relations  | International Organization | https://www.cambridge.org/core/journals/international-organization  | 906 | 579  | 127 |
+| International Relations  | International Studies Quarterly | https://academic.oup.com/isq  | 1113 | 5 | 4 |
+| International Relations  | International Affairs | https://academic.oup.com/ia | 3929 | 26 | 26 |
+| International Relations  | Journal of Peace Research | https://journals.sagepub.com/home/jpr | 619  | 144  |  93 |
+| International Relations  | Journal of Conflict Resolution | https://journals.sagepub.com/home/jcr | 529 | 153 | 109 |
+| Economics  | AER | https://www.aeaweb.org/journals/aer  | 3  |  -  |  3 |
+| Economics  | Quarterly Economic Journal | https://academic.oup.com/qje | 657  | 3  | 2 |
+| Economics  | Journal of Political Economy | https://www.journals.uchicago.edu/toc/jpe/current  | 983  | 819 |  From 2001, 267 |
+| Economics  | Journal of Public Economics | https://www.sciencedirect.com/journal/journal-of-public-economics  | 132 | 28 | 22 |
+| Topic-Specific  | Journal of Development Economics | https://www.sciencedirect.com/journal/journal-of-development-economics  | 474  | 185  | 178  |
+| Topic-Specific  | Review of Development Economics | https://onlinelibrary.wiley.com/journal/14679361  |  175 | 94  |  94 |
+| Topic-Specific  | The Journal of Development Studies | https://www.tandfonline.com/toc/fjds20/current  |  801 | 277  |  136 |
+| Topic-Specific  | Journal of International Development | https://onlinelibrary.wiley.com/journal/10991328  | 601  | 209  | 164  |
+|  | **TOTAL** |   | **14,415**  | **4,150**  |  **1,481** |
+
+
+
+
+
+
