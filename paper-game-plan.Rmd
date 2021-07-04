@@ -7,33 +7,71 @@ output: html_document
 
 # Search Strategy
 
-Search String: ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"immigration"OR"development")AND("effect"OR"impact")
+Search String
+
+Old: ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"immigration"OR"development")AND("effect"OR"impact")
+
+New: (foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*))
+
+(foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing))
+
+*In all cases, select After 2000.*
+
+Cambridge University Press: (&quot;foreign aid&quot;)AND(&quot;corruption&quot;OR&quot;poverty&quot;OR&quot;conflict&quot;OR&quot;immigration&quot;OR&quot;migration&quot;ORdevelop*)
+
+JSTOR: (foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*))AND jid:(journalcodes)
+
+Wiley: Advanced Search, 1st bar: foreign+aid ; 2nd bar: "corruption"OR"poverty"OR"conflict"OR"immigration"OR"migration"OR(develop*)
+
+Oxford Academic [does not accept searches with wildcards]: Advanced Search, 1st bar: (foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing))
+
+SAGE journals [adding wildcards alters the string because it automatically inserts an *AND* connector]: Advanced Search, 1st bar: "foreign aid" ; 2nd bar: "corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing"
+
+University of Chicago Press: ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR(develop*))
+
+Elsevier [does not accept searches with wildcards]: ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing")
+
+Taylor and Francis: Advanced Search: 1st bar: ("foreign aid") ; 2nd bar: ("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing")
 
 ## By Journal
 
-| Field | Journal | Link | "foreign aid" | Full String | String after 2000 |
-| ---------- |:---------:| ---- | :-----: | :-----: | :-------: |
-| Political Science  | APSR | https://www.cambridge.org/core/journals/american-political-science-review | 2253  | 1313  | 96 |
-| Political Science  | AJPS | https://onlinelibrary.wiley.com/journal/15405907  | 152  | 47 | Begins at 2003  |
-| Political Science  | BJPolS |  https://www.cambridge.org/core/journals/british-journal-of-political-science |  132 | 82  | 55 |
-| Political Science  | JOP  | https://www.jstor.org/journal/jpolitics | 956  | 183  | 58 |
-| International Relations  | International Organization | https://www.cambridge.org/core/journals/international-organization  | 906 | 579  | 127 |
-| International Relations  | International Studies Quarterly | https://academic.oup.com/isq  | 1113 | 5 | 4 |
-| International Relations  | International Affairs | https://academic.oup.com/ia | 3929 | 26 | 26 |
-| International Relations  | Journal of Peace Research | https://journals.sagepub.com/home/jpr | 619  | 144  |  93 |
-| International Relations  | Journal of Conflict Resolution | https://journals.sagepub.com/home/jcr | 529 | 153 | 109 |
-| Economics  | AER | https://www.aeaweb.org/journals/aer  | 3  |  -  |  3 |
-| Economics  | Quarterly Economic Journal | https://academic.oup.com/qje | 657  | 3  | 2 |
-| Economics  | Journal of Political Economy | https://www.journals.uchicago.edu/toc/jpe/current  | 983  | 819 |  From 2001, 267 |
-| Economics  | Journal of Public Economics | https://www.sciencedirect.com/journal/journal-of-public-economics  | 132 | 28 | 22 |
-| Topic-Specific  | Journal of Development Economics | https://www.sciencedirect.com/journal/journal-of-development-economics  | 474  | 185  | 178  |
-| Topic-Specific  | Review of Development Economics | https://onlinelibrary.wiley.com/journal/14679361  |  175 | 94  |  94 |
-| Topic-Specific  | The Journal of Development Studies | https://www.tandfonline.com/toc/fjds20/current  |  801 | 277  |  136 |
-| Topic-Specific  | Journal of International Development | https://onlinelibrary.wiley.com/journal/10991328  | 601  | 209  | 164  |
-|  | **TOTAL** |   | **14,415**  | **4,150**  |  **1,481** |
+| Field | Journal | Link | "foreign aid" | After 2000 | Old String | Old string After 2000 | New String | New String After 2000 | Search Bar |
+| ---------- |:---------:| ---- | :-----: | :-----: | :-----: | :-------: | :-----: | :-------: | ---- |
+| Political Science  | APSR | https://www.cambridge.org/core/journals/american-political-science-review | 2253 | 331 | 1313  | 96 | 1313 | 96 | (&quot;foreign aid&quot;)AND(&quot;corruption&quot;OR&quot;poverty&quot;OR&quot;conflict&quot;OR&quot;immigration&quot;OR&quot;migration&quot;ORdevelop*) |
+| Political Science  | AJPS | https://onlinelibrary.wiley.com/journal/15405907  | 152  | 57 | 47 | 47  | 110 | 110 | 1st bar: foreign+aid ; 2nd bar: "corruption"OR"poverty"OR"conflict"OR"immigration"OR"migration"OR(develop*) |
+| Political Science  | BJPolS |  https://www.cambridge.org/core/journals/british-journal-of-political-science |  132 | 93 | 82  | 55 | 82 | 55 | (&quot;foreign aid&quot;)AND(&quot;corruption&quot;OR&quot;poverty&quot;OR&quot;conflict&quot;OR&quot;immigration&quot;OR&quot;migration&quot;ORdevelop*) |
+| Political Science  | JOP  | https://www.jstor.org/journal/jpolitics | 956  | 174 | 183  | 58 | 764 | 133 | (foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*))AND jid:(j50011060 OR j100248) |
+| International Relations  | International Organization | https://www.cambridge.org/core/journals/international-organization  | 906 | 206 | 579  | 127 | 579 | 127 | (&quot;foreign aid&quot;)AND(&quot;corruption&quot;OR&quot;poverty&quot;OR&quot;conflict&quot;OR&quot;immigration&quot;OR&quot;migration&quot;ORdevelop*) |
+| International Relations  | International Studies Quarterly | https://academic.oup.com/isq  | 1113 | 643 | 14 | 13 | 8 | 7 | (foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing)) |
+| International Relations  | International Affairs | https://academic.oup.com/ia | 3929 | 872 | 69 | 68 | 52 | 50 | 1st bar: (foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing)) |
+| International Relations  | Journal of Peace Research | https://journals.sagepub.com/home/jpr | 619 | 339  | 144  |  93 | 166 | 90 | 1st bar: "foreign aid" ; 2nd bar: "corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing" |
+| International Relations  | Journal of Conflict Resolution | https://journals.sagepub.com/home/jcr | 529 | 281 | 153 | 109 | 164 | 110 | 1st bar: "foreign aid" ; 2nd bar: "corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing" |
+| Economics  | AER | https://www.jstor.org/journal/amereconrevi  | 2722 | 179  | 440 | 38 | 2171 | 124 | (foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*)) AND jid:(j100859 OR j100984 OR j100972 OR j100009) |
+| Economics  | The Quarterly Journal of Economics | https://academic.oup.com/qje | 657 | 67 | 2  | 2 | 0 | 0 | 1st bar: (foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing)) |
+| Economics  | Journal of Political Economy | https://www.journals.uchicago.edu/toc/jpe/current  | 983 | 42 | 63 | 6 | 47 | 5 | ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR(develop*)) |
+| Economics  | Journal of Public Economics | https://www.sciencedirect.com/journal/journal-of-public-economics  | 132 | 85 | 28 | 22 | 35 | 23 | ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing") | 
+| Economics  | The Review of Economic Studies (Restud) | https://academic.oup.com/restud | 89 | 36 | | | 0 | 0 | |
+| Topic-Specific  | World Development | https://www.sciencedirect.com/journal/world-development | 2063 | 810 | - | - | 760 | 347 | ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing") |
+| Topic-Specific  | Third World Quarterly | | | | | | 1732 | 281 | 1st bar: ("foreign aid") ; 2nd bar: ("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing") |
+| Topic-Specific  | Journal of Development Economics | https://www.sciencedirect.com/journal/journal-of-development-economics  | 474 | 201 | 185  | 178  | 204 | 99 | ("foreign aid")AND("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing") |
+| Topic-Specific  | Review of Development Economics | https://onlinelibrary.wiley.com/journal/14679361  |  175 | 175 | 94  |  94 | 128 | 128 | 1st bar: foreign+aid ; 2nd bar: "corruption"OR"poverty"OR"conflict"OR"immigration"OR"migration"OR(develop*) |
+| Topic-Specific  | The Journal of Development Studies | https://www.tandfonline.com/toc/fjds20/current  |  801 | 388 | 277  |  136 | 310 | 152 | 1st bar: ("foreign aid") ; 2nd bar: ("corruption"OR"poverty"OR"conflict"OR"migration"OR"immigration"OR"development"OR"developing") |
+| Topic-Specific  | Journal of International Development | https://onlinelibrary.wiley.com/journal/10991328  |  601 | 437 | 209  | 164 | 497 | 370 | 1st bar: foreign+aid ; 2nd bar: "corruption"OR"poverty"OR"conflict"OR"immigration"OR"migration"OR(develop*) |
+|  | **TOTAL** |   | 14,415 | 4,570 | 4,201 (++)  |  1,532 (++) | | **2,307** | | |
 
 
+# The Guide to Analyze Records
 
+Please refer to the following spreadsheet: https://docs.google.com/spreadsheets/d/1B_cIkmuTdRlshk4dIv9Gb9fz7K8dNSFNuOhod4iuBY4/edit?usp=sharing
 
+The tab titled search-links contains a list of the journals we will be working with. The links in column B are already the search results for the strings I have presented in the table in this document (the .html you are currently reading). If you notice there is anything wrong with the search terms in the links I have pasted in column B, please refer to this table to correct them. This is the first double-check procedure :) . Also make sure to update the link in the spreadsheet so the other authors have access to the exact same link you used when double-checking and moving to the next selection stages. 
+
+I divided the work between authors grouping publishers so we can be more productive if we decide to scrape the websites. Column F assigns each journal to an author, and I present the amounts of records each author will have to assess in column G. Feel free to switch if you'd like. I have also created a tab for each of us to work independently and simultaneously. All tabs look the same and you may use them as you like, but keep in mind we will have to unify everything under "full-set-records" later on.
+
+The first step is to gather the data to fill columns C through F in our individual tabs. If you are doing this manually, I recommend having the website order the records by date (oldest to newest publication) so you don't have to pay that much attention to publishing year. While collecting the dataset, you may simultaneously perform the first exclusion procedure, following publication titles. Our sample is being collected based on the matches within full articles. This means we will probably drop loads of records in this first stage. 
+
+Basically, in my opinion, we should include all papers we believe address the effects or effectiveness of foreign aid at any point. There is an intepretive/not-exactly-objective level to these eligibility procedures, but the idea is to "pecar pelo excesso". This means that we need to judge -- to a certain extent arbitrarily -- whether we believe or not these papers address this relationship just from the title. When I say "pecar pelo excesso" I mean that if you believe there is even the slightest possibility the authors address any of the effects of foreign aid, the paper moves on to the next stage. Only exclude papers that discuss a completely different topic. We should trust in one another's *bom senso*. Plus, the more titles you read, the easier it becomes to judge them.
+
+Also, like we said earlier, if you want to already include the abstract of the papers that will surely move on to the next stage while still in the first stage, feel free to do so. I've already included a column for that. We should probably discuss the next stage once we are done with this first one, as we will have to redistribute the journals/records. Here's the PRISMA statement if you want to take a look back on it: http://www.prisma-statement.org/documents/PRISMA-P-checklist.pdf . LMK if you think there's other aspects to this we should discuss.
 
 

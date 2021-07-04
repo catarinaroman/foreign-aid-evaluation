@@ -356,17 +356,33 @@ pre code {
 
 <div id="search-strategy" class="section level1">
 <h1>Search Strategy</h1>
-<p>Search String: (“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“immigration”OR“development”)AND(“effect”OR“impact”)</p>
+<p>Search String</p>
+<p>Old: (“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“immigration”OR“development”)AND(“effect”OR“impact”)</p>
+<p>New: (foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*))</p>
+<p>(foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing))</p>
+<p><em>In all cases, select After 2000.</em></p>
+<p>Cambridge University Press: (“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”ORdevelop*)</p>
+<p>JSTOR: (foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*))AND jid:(journalcodes)</p>
+<p>Wiley: Advanced Search, 1st bar: foreign+aid ; 2nd bar: “corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”OR(develop*)</p>
+<p>Oxford Academic [does not accept searches with wildcards]: Advanced Search, 1st bar: (foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing))</p>
+<p>SAGE journals [adding wildcards alters the string because it automatically inserts an <em>AND</em> connector]: Advanced Search, 1st bar: “foreign aid” ; 2nd bar: “corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”</p>
+<p>University of Chicago Press: (“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR(develop*))</p>
+<p>Elsevier [does not accept searches with wildcards]: (“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”)</p>
+<p>Taylor and Francis: Advanced Search: 1st bar: (“foreign aid”) ; 2nd bar: (“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”)</p>
 <div id="by-journal" class="section level2">
 <h2>By Journal</h2>
 <table>
 <colgroup>
-<col width="20%"></col>
-<col width="22%"></col>
-<col width="8%"></col>
+<col width="13%"></col>
 <col width="14%"></col>
-<col width="14%"></col>
-<col width="18%"></col>
+<col width="5%"></col>
+<col width="9%"></col>
+<col width="9%"></col>
+<col width="9%"></col>
+<col width="12%"></col>
+<col width="9%"></col>
+<col width="12%"></col>
+<col width="5%"></col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -374,8 +390,12 @@ pre code {
 <th align="center">Journal</th>
 <th>Link</th>
 <th align="center">“foreign aid”</th>
-<th align="center">Full String</th>
-<th align="center">String after 2000</th>
+<th align="center">After 2000</th>
+<th align="center">Old String</th>
+<th align="center">Old string After 2000</th>
+<th align="center">New String</th>
+<th align="center">New String After 2000</th>
+<th>Search Bar</th>
 </tr>
 </thead>
 <tbody>
@@ -384,148 +404,265 @@ pre code {
 <td align="center">APSR</td>
 <td><a href="https://www.cambridge.org/core/journals/american-political-science-review" class="uri">https://www.cambridge.org/core/journals/american-political-science-review</a></td>
 <td align="center">2253</td>
+<td align="center">331</td>
 <td align="center">1313</td>
 <td align="center">96</td>
+<td align="center">1313</td>
+<td align="center">96</td>
+<td>(“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”ORdevelop*)</td>
 </tr>
 <tr class="even">
 <td>Political Science</td>
 <td align="center">AJPS</td>
 <td><a href="https://onlinelibrary.wiley.com/journal/15405907" class="uri">https://onlinelibrary.wiley.com/journal/15405907</a></td>
 <td align="center">152</td>
+<td align="center">57</td>
 <td align="center">47</td>
-<td align="center">Begins at 2003</td>
+<td align="center">47</td>
+<td align="center">110</td>
+<td align="center">110</td>
+<td>1st bar: foreign+aid ; 2nd bar: “corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”OR(develop*)</td>
 </tr>
 <tr class="odd">
 <td>Political Science</td>
 <td align="center">BJPolS</td>
 <td><a href="https://www.cambridge.org/core/journals/british-journal-of-political-science" class="uri">https://www.cambridge.org/core/journals/british-journal-of-political-science</a></td>
 <td align="center">132</td>
+<td align="center">93</td>
 <td align="center">82</td>
 <td align="center">55</td>
+<td align="center">82</td>
+<td align="center">55</td>
+<td>(“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”ORdevelop*)</td>
 </tr>
 <tr class="even">
 <td>Political Science</td>
 <td align="center">JOP</td>
 <td><a href="https://www.jstor.org/journal/jpolitics" class="uri">https://www.jstor.org/journal/jpolitics</a></td>
 <td align="center">956</td>
+<td align="center">174</td>
 <td align="center">183</td>
 <td align="center">58</td>
+<td align="center">764</td>
+<td align="center">133</td>
+<td>(foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*))AND jid:(j50011060 OR j100248)</td>
 </tr>
 <tr class="odd">
 <td>International Relations</td>
 <td align="center">International Organization</td>
 <td><a href="https://www.cambridge.org/core/journals/international-organization" class="uri">https://www.cambridge.org/core/journals/international-organization</a></td>
 <td align="center">906</td>
+<td align="center">206</td>
 <td align="center">579</td>
 <td align="center">127</td>
+<td align="center">579</td>
+<td align="center">127</td>
+<td>(“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”ORdevelop*)</td>
 </tr>
 <tr class="even">
 <td>International Relations</td>
 <td align="center">International Studies Quarterly</td>
 <td><a href="https://academic.oup.com/isq" class="uri">https://academic.oup.com/isq</a></td>
 <td align="center">1113</td>
-<td align="center">5</td>
-<td align="center">4</td>
+<td align="center">643</td>
+<td align="center">14</td>
+<td align="center">13</td>
+<td align="center">8</td>
+<td align="center">7</td>
+<td>(foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing))</td>
 </tr>
 <tr class="odd">
 <td>International Relations</td>
 <td align="center">International Affairs</td>
 <td><a href="https://academic.oup.com/ia" class="uri">https://academic.oup.com/ia</a></td>
 <td align="center">3929</td>
-<td align="center">26</td>
-<td align="center">26</td>
+<td align="center">872</td>
+<td align="center">69</td>
+<td align="center">68</td>
+<td align="center">52</td>
+<td align="center">50</td>
+<td>1st bar: (foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing))</td>
 </tr>
 <tr class="even">
 <td>International Relations</td>
 <td align="center">Journal of Peace Research</td>
 <td><a href="https://journals.sagepub.com/home/jpr" class="uri">https://journals.sagepub.com/home/jpr</a></td>
 <td align="center">619</td>
+<td align="center">339</td>
 <td align="center">144</td>
 <td align="center">93</td>
+<td align="center">166</td>
+<td align="center">90</td>
+<td>1st bar: “foreign aid” ; 2nd bar: “corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”</td>
 </tr>
 <tr class="odd">
 <td>International Relations</td>
 <td align="center">Journal of Conflict Resolution</td>
 <td><a href="https://journals.sagepub.com/home/jcr" class="uri">https://journals.sagepub.com/home/jcr</a></td>
 <td align="center">529</td>
+<td align="center">281</td>
 <td align="center">153</td>
 <td align="center">109</td>
+<td align="center">164</td>
+<td align="center">110</td>
+<td>1st bar: “foreign aid” ; 2nd bar: “corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”</td>
 </tr>
 <tr class="even">
 <td>Economics</td>
 <td align="center">AER</td>
-<td><a href="https://www.aeaweb.org/journals/aer" class="uri">https://www.aeaweb.org/journals/aer</a></td>
-<td align="center">3</td>
-<td align="center">-</td>
-<td align="center">3</td>
+<td><a href="https://www.jstor.org/journal/amereconrevi" class="uri">https://www.jstor.org/journal/amereconrevi</a></td>
+<td align="center">2722</td>
+<td align="center">179</td>
+<td align="center">440</td>
+<td align="center">38</td>
+<td align="center">2171</td>
+<td align="center">124</td>
+<td>(foreign aid)AND((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(develop*)) AND jid:(j100859 OR j100984 OR j100972 OR j100009)</td>
 </tr>
 <tr class="odd">
 <td>Economics</td>
-<td align="center">Quarterly Economic Journal</td>
+<td align="center">The Quarterly Journal of Economics</td>
 <td><a href="https://academic.oup.com/qje" class="uri">https://academic.oup.com/qje</a></td>
 <td align="center">657</td>
-<td align="center">3</td>
+<td align="center">67</td>
 <td align="center">2</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td>1st bar: (foreign aid) ; 2nd bar: ((corruption)OR(poverty)OR(conflict)OR(migration)OR(immigration)OR(development)OR(developing))</td>
 </tr>
 <tr class="even">
 <td>Economics</td>
 <td align="center">Journal of Political Economy</td>
 <td><a href="https://www.journals.uchicago.edu/toc/jpe/current" class="uri">https://www.journals.uchicago.edu/toc/jpe/current</a></td>
 <td align="center">983</td>
-<td align="center">819</td>
-<td align="center">From 2001, 267</td>
+<td align="center">42</td>
+<td align="center">63</td>
+<td align="center">6</td>
+<td align="center">47</td>
+<td align="center">5</td>
+<td>(“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR(develop*))</td>
 </tr>
 <tr class="odd">
 <td>Economics</td>
 <td align="center">Journal of Public Economics</td>
 <td><a href="https://www.sciencedirect.com/journal/journal-of-public-economics" class="uri">https://www.sciencedirect.com/journal/journal-of-public-economics</a></td>
 <td align="center">132</td>
+<td align="center">85</td>
 <td align="center">28</td>
 <td align="center">22</td>
+<td align="center">35</td>
+<td align="center">23</td>
+<td>(“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”)</td>
 </tr>
 <tr class="even">
+<td>Economics</td>
+<td align="center">The Review of Economic Studies (Restud)</td>
+<td><a href="https://academic.oup.com/restud" class="uri">https://academic.oup.com/restud</a></td>
+<td align="center">89</td>
+<td align="center">36</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Topic-Specific</td>
+<td align="center">World Development</td>
+<td><a href="https://www.sciencedirect.com/journal/world-development" class="uri">https://www.sciencedirect.com/journal/world-development</a></td>
+<td align="center">2063</td>
+<td align="center">810</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">760</td>
+<td align="center">347</td>
+<td>(“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”)</td>
+</tr>
+<tr class="even">
+<td>Topic-Specific</td>
+<td align="center">Third World Quarterly</td>
+<td></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">1732</td>
+<td align="center">281</td>
+<td>1st bar: (“foreign aid”) ; 2nd bar: (“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”)</td>
+</tr>
+<tr class="odd">
 <td>Topic-Specific</td>
 <td align="center">Journal of Development Economics</td>
 <td><a href="https://www.sciencedirect.com/journal/journal-of-development-economics" class="uri">https://www.sciencedirect.com/journal/journal-of-development-economics</a></td>
 <td align="center">474</td>
+<td align="center">201</td>
 <td align="center">185</td>
 <td align="center">178</td>
+<td align="center">204</td>
+<td align="center">99</td>
+<td>(“foreign aid”)AND(“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Topic-Specific</td>
 <td align="center">Review of Development Economics</td>
 <td><a href="https://onlinelibrary.wiley.com/journal/14679361" class="uri">https://onlinelibrary.wiley.com/journal/14679361</a></td>
 <td align="center">175</td>
+<td align="center">175</td>
 <td align="center">94</td>
 <td align="center">94</td>
+<td align="center">128</td>
+<td align="center">128</td>
+<td>1st bar: foreign+aid ; 2nd bar: “corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”OR(develop*)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Topic-Specific</td>
 <td align="center">The Journal of Development Studies</td>
 <td><a href="https://www.tandfonline.com/toc/fjds20/current" class="uri">https://www.tandfonline.com/toc/fjds20/current</a></td>
 <td align="center">801</td>
+<td align="center">388</td>
 <td align="center">277</td>
 <td align="center">136</td>
+<td align="center">310</td>
+<td align="center">152</td>
+<td>1st bar: (“foreign aid”) ; 2nd bar: (“corruption”OR“poverty”OR“conflict”OR“migration”OR“immigration”OR“development”OR“developing”)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Topic-Specific</td>
 <td align="center">Journal of International Development</td>
 <td><a href="https://onlinelibrary.wiley.com/journal/10991328" class="uri">https://onlinelibrary.wiley.com/journal/10991328</a></td>
 <td align="center">601</td>
+<td align="center">437</td>
 <td align="center">209</td>
 <td align="center">164</td>
+<td align="center">497</td>
+<td align="center">370</td>
+<td>1st bar: foreign+aid ; 2nd bar: “corruption”OR“poverty”OR“conflict”OR“immigration”OR“migration”OR(develop*)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td align="center"><strong>TOTAL</strong></td>
 <td></td>
-<td align="center"><strong>14,415</strong></td>
-<td align="center"><strong>4,150</strong></td>
-<td align="center"><strong>1,481</strong></td>
+<td align="center">14,415</td>
+<td align="center">4,570</td>
+<td align="center">4,201 (++)</td>
+<td align="center">1,532 (++)</td>
+<td align="center"></td>
+<td align="center"><strong>2,307</strong></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
+</div>
+<div id="the-guide-to-analyze-records" class="section level1">
+<h1>The Guide to Analyze Records</h1>
+<p>Please refer to the following spreadsheet: <a href="https://docs.google.com/spreadsheets/d/1B_cIkmuTdRlshk4dIv9Gb9fz7K8dNSFNuOhod4iuBY4/edit?usp=sharing" class="uri">https://docs.google.com/spreadsheets/d/1B_cIkmuTdRlshk4dIv9Gb9fz7K8dNSFNuOhod4iuBY4/edit?usp=sharing</a></p>
+<p>The tab titled search-links contains a list of the journals we will be working with. The links in column B are already the search results for the strings I have presented in the table in this document (the .html you are currently reading). If you notice there is anything wrong with the search terms in the links I have pasted in column B, please refer to this table to correct them. This is the first double-check procedure :) . Also make sure to update the link in the spreadsheet so the other authors have access to the exact same link you used when double-checking and moving to the next selection stages.</p>
+<p>I divided the work between authors grouping publishers so we can be more productive if we decide to scrape the websites. Column F assigns each journal to an author, and I present the amounts of records each author will have to assess in column G. Feel free to switch if you’d like. I have also created a tab for each of us to work independently and simultaneously. All tabs look the same and you may use them as you like, but keep in mind we will have to unify everything under “full-set-records” later on.</p>
+<p>The first step is to gather the data to fill columns C through F in our individual tabs. If you are doing this manually, I recommend having the website order the records by date (oldest to newest publication) so you don’t have to pay that much attention to publishing year. While collecting the dataset, you may simultaneously perform the first exclusion procedure, following publication titles. Our sample is being collected based on the matches within full articles. This means we will probably drop loads of records in this first stage.</p>
+<p>Basically, in my opinion, we should include all papers we believe address the effects or effectiveness of foreign aid at any point. There is an intepretive/not-exactly-objective level to these eligibility procedures, but the idea is to “pecar pelo excesso”. This means that we need to judge – to a certain extent arbitrarily – whether we believe or not these papers address this relationship just from the title. When I say “pecar pelo excesso” I mean that if you believe there is even the slightest possibility the authors address any of the effects of foreign aid, the paper moves on to the next stage. Only exclude papers that discuss a completely different topic. We should trust in one another’s <em>bom senso</em>. Plus, the more titles you read, the easier it becomes to judge them.</p>
+<p>Also, like we said earlier, if you want to already include the abstract of the papers that will surely move on to the next stage while still in the first stage, feel free to do so. I’ve already included a column for that. We should probably discuss the next stage once we are done with this first one, as we will have to redistribute the journals/records. Here’s the PRISMA statement if you want to take a look back on it: <a href="http://www.prisma-statement.org/documents/PRISMA-P-checklist.pdf" class="uri">http://www.prisma-statement.org/documents/PRISMA-P-checklist.pdf</a> . LMK if you think there’s other aspects to this we should discuss.</p>
 </div>
 
 
